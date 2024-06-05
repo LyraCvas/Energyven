@@ -32,6 +32,7 @@
 :root{
     --primary-color: green;
     --dark-color: rgb(45, 45, 45);
+    --white-color: rgb(254, 254, 254);
     --trans-primary:rgba(0, 128, 0, 0.329);
     --green-1:rgb(105, 220, 69);
     font-family: "Nunito", sans-seri ;
@@ -70,7 +71,7 @@
 /* Colores de letras */
 
 .ltrs-white{
-    color: var();
+    color: var(--white-color);
 }
 
 .ltrs-drk{
@@ -95,10 +96,15 @@
 }
 
 .Header{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-height: 106vh;
+    min-height: 100vh;
+    background-image: url('../imgs/primerbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Nav{
@@ -107,8 +113,16 @@
     justify-content: space-between;
 }
 
+.Nav-logo-cont{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 380px;
+    width: 25%;    
+}
+
 .Nav-logo {
-    width: 10%;
+    width: 55%;
     min-width: 120px;
 }
 
@@ -127,7 +141,7 @@
 
 .Nav-btns a {
     font-weight: 600; 
-    color: var(--dark-color);
+    color: var(--white-color);
     font-size: var(--fs-base);
 }
 
@@ -179,8 +193,8 @@
     display: flex;
     z-index: 1;
     max-height: 500px;
-    width: 65%;
-    bottom: 10%;
+    width: 72%;
+    bottom: 0%;
     right: 0;
     object-fit: contain;
 }
@@ -235,10 +249,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: .5rem;
     margin-left: 15px;
 }
 
 .rrss li a{
-    color: var(--dark-color);
+    color: var(--white-color);
+    font-size: var(--fs-base);
+}
+
+.balls{
+    height: 15px;
+    border: var(--green-1) dotted .1px ;
 }
