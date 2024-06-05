@@ -1,0 +1,244 @@
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+          --fs-sm: clamp(0.75rem, 0.08vi + 0.73rem, 0.8rem);
+          --fs-base: clamp(1rem, 0.22vi + 0.95rem, 1.13rem);
+          --fs-md: clamp(1.33rem, 0.45vi + 1.23rem, 1.59rem);
+          --fs-lg: clamp(1.78rem, 0.83vi + 1.59rem, 2.25rem);
+          --fs-xl: clamp(2.37rem, 1.42vi + 2.05rem, 3.18rem);
+    }
+  }
+  /* For browsers that don't support clamp */
+  @supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+          --fs-sm: 0.75rem;
+          --fs-base: 1rem;
+          --fs-md: 1.33rem;
+          --fs-lg: 1.78rem;
+          --fs-xl: 2.37rem;
+    }
+    @media screen and (min-width: 1280px) {
+      :root {
+              --fs-sm: 0.8rem;
+              --fs-base: 1.13rem;
+              --fs-md: 1.59rem;
+              --fs-lg: 2.25rem;
+              --fs-xl: 3.18rem;
+      }
+    }
+  }
+
+
+:root{
+    --primary-color: green;
+    --dark-color: rgb(45, 45, 45);
+    --trans-primary:rgba(0, 128, 0, 0.329);
+    --green-1:rgb(105, 220, 69);
+    font-family: "Nunito", sans-seri ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tamaño de letras */
+
+.ltrs-sm{
+    font-size: var(--fs-sm);
+}
+
+.ltrs-base{
+    font-size: var(--fs-base);
+}
+
+.ltrs-md{
+    font-size: var(--fs-md);
+}
+
+.ltrs-lg{
+    font-size: var(--fs-lg);
+}
+
+.ltrs-xl{
+    font-size: var(--fs-xl);
+}
+
+/* Hasta aqui los tamaños de letras */
+
+/* Colores de letras */
+
+.ltrs-white{
+    color: var();
+}
+
+.ltrs-drk{
+    color: var(--dark-color);
+}
+
+.ltrs-green{
+    color: var(--green-1);
+}
+
+/* Hasta aqui los colores de letras */
+
+.a{
+    text-decoration: none;
+}
+
+.Cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 106vh;
+}
+
+.Nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Nav-logo {
+    width: 10%;
+    min-width: 120px;
+}
+
+.Nav-btns-cont {
+    list-style: none;
+    display: flex;
+    min-width: 60%;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.Nav-btns {
+    padding: 1.7% 2.2%;
+}
+
+.Nav-btns a {
+    font-weight: 600; 
+    color: var(--dark-color);
+    font-size: var(--fs-base);
+}
+
+.Nav-btns:hover,
+.Nav-btns:hover a {
+    background-color: var();
+    color: var(--green-1);
+    transition: 0.4s;
+}
+
+
+.Nav-left-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Callus-BTN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    background-color: var(--green-1);
+    width: 75px;
+    color: var(--dark-color);
+    aspect-ratio: 1/1;
+}
+
+.Callus-BTN:hover {
+    background-color: darkcyan;
+    color: var(--dark-color);
+    transition: 0.4s;
+}
+
+.title-1{
+    position: absolute;
+    display: flex;    
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 500px;
+    top: 20%;
+    min-height: 300px;
+    z-index: 111;
+}
+
+.header-obj-1{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    max-height: 500px;
+    width: 65%;
+    bottom: 10%;
+    right: 0;
+    object-fit: contain;
+}
+
+/* Boton */
+
+.btn-border{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: solid var(--green-1) 1px;
+    padding: 1% 4%;
+}
+
+.btn-border::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    z-index: 3;
+    top: -2px;
+    right: 10px;
+    background-color: white;
+}
+.btn-border::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    z-index: 4;
+    top: -2.5555px;
+    right: 30px;
+    background-color: var(--green-1);
+}
+.btn-border:hover {
+    border: solid var(--green-1) 2px;
+}
+
+/* Boton hasta aqui */
+
+.rrss-cont{
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+
+.rrss{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 15px;
+}
+
+.rrss li a{
+    color: var(--dark-color);
+}

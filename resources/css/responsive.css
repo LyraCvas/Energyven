@@ -1,0 +1,54 @@
+.hamburguer{
+    display: none;
+  }
+@media (max-width:830px ){
+    .Nav{
+        width: 100%;
+        display: flex;
+        background-color: aliceblue;
+        /* padding: 1% 0; */
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1.5%;
+        right: 2%;
+    }
+    .hamburguer .line{        
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+        background: var(--primary-color);
+    }
+
+    .Nav-btns-cont{
+        position: absolute;
+        display: block;
+        max-height: 0px;        
+        top: 66.66px;
+        left: 0 ;
+        right: 0;
+        width: 100%;
+        background-color:var(--green-1);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 111;
+    }
+
+    .Nav-btns-cont.active{        
+        max-height: 600px;
+        height: auto;
+    }
+
+    .Nav-btns{
+        display: block;
+        width: max-content;
+        margin: 20px auto 0 auto;
+    }
+    
+    .Nav-left-cont{
+        display: none;
+    }
+}
