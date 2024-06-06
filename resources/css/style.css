@@ -35,6 +35,7 @@
     --white-color: rgb(254, 254, 254);
     --trans-primary:rgba(0, 128, 0, 0.329);
     --green-1:rgb(105, 220, 69);
+    --green-2:rgb(72, 141, 3);
     font-family: "Nunito", sans-seri ;
 }
 
@@ -80,6 +81,9 @@
 
 .ltrs-green{
     color: var(--green-1);
+}
+.ltrs-green2{
+    color: var(--green-2);
 }
 
 /* Hasta aqui los colores de letras */
@@ -199,6 +203,36 @@
     object-fit: contain;
 }
 
+/* Contenedor 2 */
+.Cont-2{
+    padding: 2% 0 0 0;
+    min-height: 80vh;
+    justify-content: flex-start;
+}
+
+.Cont-2-bg{
+    background-image: url('../imgs/aboutusbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Text-cont-2{
+    display: flex;
+    gap: 05%;
+    padding: 3%;
+}
+
+.Text-cont-2 p{
+    max-width: 550px;
+}
+
+.vert-line{
+    min-height: 15vh;
+    width: 2px;
+    background-color: var(--dark-color);
+}
+
 /* Boton */
 
 .btn-border{
@@ -238,6 +272,7 @@
 
 /* Boton hasta aqui */
 
+/* Redes Sociales */
 .rrss-cont{
     position: absolute;
     left: 0;
@@ -253,7 +288,14 @@
     margin-left: 15px;
 }
 
-.rrss li a{
+.rrss-y{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rrss li a, .rrss-y li a{
     color: var(--white-color);
     font-size: var(--fs-base);
 }
@@ -261,4 +303,49 @@
 .balls{
     height: 15px;
     border: var(--green-1) dotted .1px ;
+}
+/* Hasta aqui redes sociales */
+
+/* Footer */
+.Footer{
+    gap: 1.5rem;
+}
+
+.Nav-footer{
+    list-style: none;
+    display: flex;
+    min-width: 60%;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer-bg{
+    background-image:url('../imgs/footerbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Footer-logo{
+    width: 18%;
+}
+
+.Cont-3{
+    display: flex;
+    gap: 5rem;
+}
+
+.Cards-foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+.Footer-rrss{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
 }
