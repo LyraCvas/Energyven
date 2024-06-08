@@ -122,6 +122,63 @@
 
     </div>
 
+    <!-- fin del contenedor project -->
+
+    <!-- Contenedor contacto -->
+
+    <div class="containerPadre-contactos">
+        <section class="titulo-contactos">
+            <h4 class="ltrs-lg ltrs-drk">Contact Us</h4>
+        </section>
+
+
+        <section class="contac">
+            <img src="./resources/imgs/imgcontacto.png" alt="">
+
+            <form action="" method="POST">
+
+                <section class="input-box">
+                    <article class="input-field field">
+                        <label> Name</label>
+                        <input type="text" placeholder="Enter Your Name" id="name" class="item" autocomplete="off">
+                        <article class="error-txt">Full name can't be blank</article>
+                    </article>
+
+                    <article class="input-field field">
+                        <label>Phone number</label>
+                        <input type="number" placeholder="Enter Your Number" id="telefono" class="item" autocomplete="off">
+                        <article class="error-txt">Phone number can't be blank</article>
+                    </article>
+
+                    <article class="input-field field">
+                        <label>Email</label>
+                        <input type="text" placeholder="Enter Your Email" id="email" class="item" autocomplete="off">
+                        <article class="error-txt">Email adress can't be blank</article>
+                    </article>
+
+                </section>
+
+                <section class="textarea-field field">
+                    <label>Message</label>
+                    <textarea name="" id="mensaje" cols="30" rows="3" placeholder="Your massage" class="item" autocomplete="off"></textarea>
+                    <article class="error-txt">Message can't be blank</article>
+                </section>
+
+                <section class="btn-contactos">
+                    <button class="submit">Send Message</button>
+                </section>
+
+            </form>
+
+
+
+        </section>
+
+
+
+    </div>
+
+
 
 
     <footer class="Cont Footer Footer-bg">
@@ -162,6 +219,8 @@
 
     </footer>
     <script src="./js/nav.js"></script>
+    <script src="./js/contactoCorreo"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
