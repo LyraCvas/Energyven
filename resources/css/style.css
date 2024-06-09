@@ -873,7 +873,7 @@ form button {
     margin-top: 15px;
     border-radius: 25px;
     border: solid var(--green-1) 1px;
-    padding: 1% 4%;
+    padding: 2% 4%;
     background-color: #FFF;
     cursor: pointer;
 }
