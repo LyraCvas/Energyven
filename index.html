@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/responsive.css">
+
     <title>Document</title>
 </head>
 
@@ -65,6 +67,82 @@
         <a class="a btn-border ltrs-base ltrs-drk" href="">Read More</a>
     </section>
 
+    <!-- Contenedor Slider -->
+
+    <!-- Este es el contenedor con Swiper -->
+    <!-- <div class="Cont Cont-4">
+        <section>
+            <h4 class="ltrs-xl ltrs-green2 ">Services</h4>
+        </section>
+        <section class="swiper slider">
+            <section class="swiper-wrapper" >
+                <article class="swiper-slide slider-card" style="background-image: url('./resources/imgs/turbine.png');">
+                    <p class="ltrs-lg ltrs-white slider-titles">Turbines</p>
+                    <article class="Lateral-slider-content">
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
+                    </article>                    
+                </article>
+                <article class="swiper-slide slider-card" style="background-image: url('./resources/imgs/solarpanel.jpg');">
+                    <p class="ltrs-lg ltrs-white slider-titles">Solar Panel</p>
+                    <article class="Lateral-slider-content">
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
+                    </article>                    
+                </article>
+                <article class="swiper-slide slider-card" style="background-image: url('./resources/imgs/hydro_global_2400x1160.jpg');">
+                    <p class="ltrs-lg ltrs-white slider-titles">Hydropower</p>
+                    <article class="Lateral-slider-content">
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
+                    </article> 
+                </article>
+            </section>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+    </div> -->
+
+    <!-- Otro contenedor con JS propio -->
+    <div class="Cont Cont-4">
+        <section class="Cont-titles">
+            <div class="line-title1"></div>
+            <h4 class="ltrs-xl ltrs-green2 ">Services</h4>
+            <div class="line-title2"></div>
+        </section>
+        <section class=" slider">
+            <section class="carrusel Slider" >
+                <article class="slider-card" style="background-image: url('./resources/imgs/turbine.png');">
+                    <p class="ltrs-lg ltrs-white slider-titles">Turbines</p>
+                    <article class="Lateral-slider-content">
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
+                    </article>                    
+                </article>
+                <article class="slider-card" style="background-image: url('./resources/imgs/solarpanel.jpg');">
+                    <p class="ltrs-lg ltrs-white slider-titles">Solar Panel</p>
+                    <article class="Lateral-slider-content">
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
+                    </article>                    
+                </article>
+                <article class="slider-card" style="background-image: url('./resources/imgs/hydro_global_2400x1160.jpg');">
+                    <p class="ltrs-lg ltrs-white slider-titles">Hydropower</p>
+                    <article class="Lateral-slider-content">
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
+                    </article> 
+                </article> 
+            </section>
+            <div class="btnsSlider2 ">
+                <button class="slider2-btns next"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider2-btns prev"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            
+        </section>
+    </div>
+
+<!-- hasta aqui el contenedor de slider -->
 
     <!-- Contenedor iconos -->
 
@@ -218,6 +296,9 @@
         </article>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/slider2.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/contactoCorreo"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>

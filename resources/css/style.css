@@ -39,6 +39,7 @@
     --trans-primary: rgba(0, 128, 0, 0.329);
     --green-1: rgb(105, 220, 69);
     --green-2: rgb(72, 141, 3);
+    --green-3:rgb(170, 204, 131);
     font-family: "Nunito", sans-seri;
 }
 
@@ -325,6 +326,181 @@
 /* Hasta aqui redes sociales */
 
 
+/* Para las lineas de los titulos */
+.Cont-titles{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.line-title1,
+.line-title2{
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+    background-color: var(--dark-color);
+    height: 2px;
+}
+.line-title1::before,
+.line-title2::before
+{
+    content: "";
+    position: absolute;
+    right:  0;
+    top: -4px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark-color);
+}
+.line-title2::before{
+    left: 0;
+}
+
+
+/* Services */
+.Cont-4{
+    min-height: 80vh;
+}
+
+.swiper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.slider{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 80vh;
+}
+
+.slider-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    /* margin-left: 50px; */
+    width: 80%;
+    height: 60vh;
+    max-width: 950px;
+    min-height: 440px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-titles{
+    padding: 2% 10%;
+    background-image: url('../imgs/titlesbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 150;
+}
+
+.Lateral-slider-content{
+    display: flex;
+    position: absolute;
+    top:-7%;
+    right: -0%;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    aspect-ratio: 3/4;
+    border-radius: 15px;
+    height: 70vh;
+    padding: 5%;
+    background-image: url('../imgs/cardbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .7s;
+}
+
+.swiper-slide-next .Lateral-slider-content,
+.swiper-slide-prev .Lateral-slider-content,
+.slider-card:nth-child(1) .Lateral-slider-content,
+.slider-card:nth-child(3) .Lateral-slider-content
+{
+    opacity: 0;
+    transition: .1s;
+}
+
+.swiper-slide-prev .slider-titles,
+.slider-card:nth-child(1) .slider-titles
+{
+    position: absolute;
+    padding: 2%;
+    left: 0;
+    border-radius:  0 10px 10px 0 ;
+    background-color: var(--primary-color);
+    background-image: none;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    height: 100%;
+}
+.swiper-slide-next .slider-titles,
+.slider-card:nth-child(3) .slider-titles
+{
+    position: absolute;
+    padding: 2%;
+    right: 0;
+    border-radius:  0 10px 10px 0;
+    background-color: var(--primary-color);
+    background-image: none;
+    text-align: center;
+    writing-mode: vertical-lr;    
+    height: 100%;
+}
+
+.swiper-slide-prev.slider-card,
+.slider-card:nth-child(1){
+    min-width: 150px;
+    width: 15%;
+    height: 350px;
+    transition: .7s;
+}
+.swiper-slide-next.slider-card,
+.slider-card:nth-child(3){
+    width: 200px;
+    height: 350px;
+    transition: .7s;
+}
+
+.btnsSlider2{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 3%;    
+    width: 100%;
+    
+}
+
+.slider2-btns{
+    padding: 1%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: var(--green-3);
+    border-radius: 50px;
+    z-index: 500;
+}
+
+
+.carrusel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
 /* Footer */
 
 .Footer {
