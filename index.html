@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/responsive.css">
 
@@ -111,63 +111,70 @@
             <div class="line-title2"></div>
         </section>
         <section class=" slider">
-            <section class="carrusel Slider" >
+            <section class="carrusel Slider">
                 <article class="slider-card" style="background-image: url('./resources/imgs/turbine.png');">
                     <p class="ltrs-lg ltrs-white slider-titles">Turbines</p>
                     <article class="Lateral-slider-content">
-                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus
+                            debitis blanditiis.</p>
                         <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
-                    </article>                    
+                    </article>
                 </article>
                 <article class="slider-card" style="background-image: url('./resources/imgs/solarpanel.jpg');">
                     <p class="ltrs-lg ltrs-white slider-titles">Solar Panel</p>
                     <article class="Lateral-slider-content">
-                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus
+                            debitis blanditiis.</p>
                         <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
-                    </article>                    
+                    </article>
                 </article>
                 <article class="slider-card" style="background-image: url('./resources/imgs/hydro_global_2400x1160.jpg');">
                     <p class="ltrs-lg ltrs-white slider-titles">Hydropower</p>
                     <article class="Lateral-slider-content">
-                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus debitis blanditiis.</p>
+                        <p class="ltrs-base ltrs-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam vero. Impedit recusandae consequuntur animi dolore tempora exercitationem perferendis rem quam aspernatur amet quo, distinctio ducimus voluptate repellendus
+                            debitis blanditiis.</p>
                         <a class="a btn-border ltrs-base ltrs-white" href="">Read More</a>
-                    </article> 
-                </article> 
+                    </article>
+                </article>
             </section>
             <div class="btnsSlider2 ">
                 <button class="slider2-btns next"><i class="fa-solid fa-chevron-left"></i></button>
                 <button class="slider2-btns prev"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
-            
+
         </section>
     </div>
 
-<!-- hasta aqui el contenedor de slider -->
+    <!-- hasta aqui el contenedor de slider -->
 
     <!-- Contenedor iconos -->
 
     <div class="contPadre-iconos">
-        <section class="card-icono">
+        <section class="contador ocultar">
             <img src="./resources/imgs/agregar.png" alt="">
-            <h4>35,000</h4>
+            <section class="contador_cantidad" data-cantidad-total="35000">0</section>
+            <!-- <h4>35,000</h4> -->
             <p>Happy customer </p>
         </section>
 
-        <section class="card-icono">
+        <section class="contador ocultar">
             <img src="./resources/imgs/lista-de-verificacion (1).png" alt="">
-            <h4>541+</h4>
+            <section class="contador_cantidad" data-cantidad-total="541">0</section>
+            <!-- <h4>541+</h4> -->
             <p>Project done </p>
         </section>
 
-        <section class="card-icono">
+        <section class="contador ocultar">
             <img src="./resources/imgs/trofeo.png" alt="">
-            <h4>30+</h4>
+            <section class="contador_cantidad" data-cantidad-total="30">0</section>
+            <!-- <h4>30+</h4> -->
             <p>Awards win</p>
         </section>
 
-        <section class="card-icono">
+        <section class="contador ocultar">
             <img src="./resources/imgs/trabajador.png" alt="">
-            <h4>231</h4>
+            <section class="contador_cantidad" data-cantidad-total="231">0</section>
+            <!-- <h4>231</h4> -->
             <p>Clients works</p>
         </section>
 
@@ -213,37 +220,37 @@
         <section class="contac">
             <img src="./resources/imgs/imgcontacto.png" alt="">
 
-            <form action="" method="POST">
+            <form action="" class="form" id="form">
 
                 <section class="input-box">
                     <article class="input-field field">
                         <label> Name</label>
-                        <input type="text" placeholder="Enter Your Name" id="name" class="item" autocomplete="off">
-                        <article class="error-txt">Full name can't be blank</article>
+                        <input type="text" name="nombre" id="nombre" placeholder="Enter Your Name" class="item" required>
+                        <!-- <article class="error-txt">Full name can't be blank</article> -->
                     </article>
 
                     <article class="input-field field">
                         <label>Phone number</label>
-                        <input type="number" placeholder="Enter Your Number" id="telefono" class="item" autocomplete="off">
-                        <article class="error-txt">Phone number can't be blank</article>
+                        <input type="number" name="telefono" placeholder="Enter Your Number" id="telefono" class="item" required>
+                        <!-- <article class="error-txt">Phone number can't be blank</article> -->
                     </article>
 
                     <article class="input-field field">
                         <label>Email</label>
-                        <input type="text" placeholder="Enter Your Email" id="email" class="item" autocomplete="off">
-                        <article class="error-txt">Email adress can't be blank</article>
+                        <input type="text" placeholder="Enter Your Email" name="correo" id="correo" class="item" required>
+                        <!-- <article class="error-txt">Email adress can't be blank</article> -->
                     </article>
 
                 </section>
 
                 <section class="textarea-field field">
                     <label>Message</label>
-                    <textarea name="" id="mensaje" cols="30" rows="3" placeholder="Your massage" class="item" autocomplete="off"></textarea>
-                    <article class="error-txt">Message can't be blank</article>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Your massage" class="item" required></textarea>
+                    <!-- <article class="error-txt">Message can't be blank</article> -->
                 </section>
 
-                <section class="btn-contactos">
-                    <button class="submit ltrs-sm ltrs-drk">Send Message</button>
+                <section class="btn-contactos ltrs-sm ltrs-drk">
+                    <button id="submit" type="submit">Send Message</button>
                 </section>
 
             </form>
@@ -296,12 +303,16 @@
         </article>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/slider.js"></script>
     <script src="./js/slider2.js"></script>
     <script src="./js/nav.js"></script>
-    <script src="./js/contactoCorreo"></script>
+    <script src="./js/contacto.js"></script>
+    <!-- <script src="./js/contactoCorreo"></script> -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/animacion-cards.js"></script>
+
 </body>
 
 </html>

@@ -39,7 +39,7 @@
     --trans-primary: rgba(0, 128, 0, 0.329);
     --green-1: rgb(105, 220, 69);
     --green-2: rgb(72, 141, 3);
-    --green-3:rgb(170, 204, 131);
+    --green-3: rgb(170, 204, 131);
     font-family: "Nunito", sans-seri;
 }
 
@@ -327,43 +327,46 @@
 
 
 /* Para las lineas de los titulos */
-.Cont-titles{
+
+.Cont-titles {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 .line-title1,
-.line-title2{
+.line-title2 {
     width: 100%;
     position: relative;
     min-width: 1000px;
     background-color: var(--dark-color);
     height: 2px;
 }
+
 .line-title1::before,
-.line-title2::before
-{
+.line-title2::before {
     content: "";
     position: absolute;
-    right:  0;
+    right: 0;
     top: -4px;
     border-radius: 50%;
     width: 10px;
     height: 10px;
     background-color: var(--dark-color);
 }
-.line-title2::before{
+
+.line-title2::before {
     left: 0;
 }
 
 
 /* Services */
-.Cont-4{
+
+.Cont-4 {
     min-height: 80vh;
 }
 
-.swiper{
+.swiper {
     display: flex;
     position: relative;
     align-items: center;
@@ -371,7 +374,7 @@
     width: 80%;
 }
 
-.slider{
+.slider {
     display: flex;
     position: relative;
     align-items: center;
@@ -380,11 +383,11 @@
     min-height: 80vh;
 }
 
-.slider-card{
+.slider-card {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     /* margin-left: 50px; */
     width: 80%;
     height: 60vh;
@@ -396,7 +399,7 @@
     background-repeat: no-repeat;
 }
 
-.slider-titles{
+.slider-titles {
     padding: 2% 10%;
     background-image: url('../imgs/titlesbg.png');
     background-position: center;
@@ -405,10 +408,10 @@
     z-index: 150;
 }
 
-.Lateral-slider-content{
+.Lateral-slider-content {
     display: flex;
     position: absolute;
-    top:-7%;
+    top: -7%;
     right: -0%;
     z-index: 100;
     flex-direction: column;
@@ -428,19 +431,17 @@
 .swiper-slide-next .Lateral-slider-content,
 .swiper-slide-prev .Lateral-slider-content,
 .slider-card:nth-child(1) .Lateral-slider-content,
-.slider-card:nth-child(3) .Lateral-slider-content
-{
+.slider-card:nth-child(3) .Lateral-slider-content {
     opacity: 0;
     transition: .1s;
 }
 
 .swiper-slide-prev .slider-titles,
-.slider-card:nth-child(1) .slider-titles
-{
+.slider-card:nth-child(1) .slider-titles {
     position: absolute;
     padding: 2%;
     left: 0;
-    border-radius:  0 10px 10px 0 ;
+    border-radius: 0 10px 10px 0;
     background-color: var(--primary-color);
     background-image: none;
     text-align: center;
@@ -448,44 +449,44 @@
     transform: rotate(180deg);
     height: 100%;
 }
+
 .swiper-slide-next .slider-titles,
-.slider-card:nth-child(3) .slider-titles
-{
+.slider-card:nth-child(3) .slider-titles {
     position: absolute;
     padding: 2%;
     right: 0;
-    border-radius:  0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
     background-color: var(--primary-color);
     background-image: none;
     text-align: center;
-    writing-mode: vertical-lr;    
+    writing-mode: vertical-lr;
     height: 100%;
 }
 
 .swiper-slide-prev.slider-card,
-.slider-card:nth-child(1){
+.slider-card:nth-child(1) {
     min-width: 150px;
     width: 15%;
     height: 350px;
     transition: .7s;
 }
+
 .swiper-slide-next.slider-card,
-.slider-card:nth-child(3){
+.slider-card:nth-child(3) {
     width: 200px;
     height: 350px;
     transition: .7s;
 }
 
-.btnsSlider2{
+.btnsSlider2 {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    bottom: 3%;    
+    bottom: 3%;
     width: 100%;
-    
 }
 
-.slider2-btns{
+.slider2-btns {
     padding: 1%;
     aspect-ratio: 1/1;
     border: none;
@@ -494,13 +495,14 @@
     z-index: 500;
 }
 
-
-.carrusel{
+.carrusel {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
+
+
 /* Footer */
 
 .Footer {
@@ -559,7 +561,7 @@
     gap: 125px;
 }
 
-.card-icono {
+.contador {
     width: 13%;
     height: 28vh;
     /* border: 1px solid rgb(17, 94, 14); */
@@ -573,17 +575,40 @@
     box-shadow: -1px 5px 13px 4px rgba(0, 0, 0, 0.09);
 }
 
-.card-icono img {
-    width: 50px;
+.contador img {
+    width: 30%;
 }
 
-.card-icono h4 {
+.contador_cantidad {
+    font-size: var(--fs-md);
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+.contador h4 {
     font-size: var(--fs-base);
     font-weight: bold;
 }
 
-.card-icono p {
-    font-size: var(--fs-sm);
+.contador p {
+    font-size: var(--fs-base);
     color: var(--primary-color);
     font-weight: bold;
 }
