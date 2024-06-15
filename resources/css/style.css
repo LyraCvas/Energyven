@@ -142,7 +142,9 @@
 .Nav-btns-cont {
     list-style: none;
     display: flex;
-    min-width: 60%;
+    min-width: 600px;
+    width: 65%;
+    max-width: 1200px;
     gap: 1em;
     align-items: center;
     justify-content: center;
@@ -179,6 +181,7 @@
     margin-left: 15px;
     background-color: var(--green-1);
     width: 75px;
+    max-width: 104.5px;
     color: var(--dark-color);
     aspect-ratio: 1/1;
 }
@@ -315,6 +318,13 @@
 .rrss-y li a {
     color: var(--white-color);
     font-size: var(--fs-base);
+    transition: color .3s;
+}
+.rrss li a:hover,
+.rrss-y li a:hover{
+    color: var(--green-2);
+    font-size: var(--fs-base);
+    transition: color .3s ;
 }
 
 .balls {
@@ -331,6 +341,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    margin: 0 0 25px 0;
 }
 
 .line-title1,
@@ -357,6 +368,12 @@
     left: 0;
 }
 
+.titles{
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 250px;
+    text-align: center;
+}
 
 /* Services */
 .Cont-4{
@@ -388,6 +405,7 @@
     /* margin-left: 50px; */
     width: 80%;
     height: 60vh;
+    transition: .7s;
     max-width: 950px;
     min-height: 440px;
     border-radius: 10px;
@@ -430,8 +448,10 @@
 .slider-card:nth-child(1) .Lateral-slider-content,
 .slider-card:nth-child(3) .Lateral-slider-content
 {
+    display:none;
     opacity: 0;
-    transition: .1s;
+    transition: .7s;
+    transform: translate(0, -100%);
 }
 
 .swiper-slide-prev .slider-titles,
@@ -471,7 +491,8 @@
 }
 .swiper-slide-next.slider-card,
 .slider-card:nth-child(3){
-    width: 200px;
+    min-width: 150px;
+    width: 15%;
     height: 350px;
     transition: .7s;
 }
@@ -486,6 +507,7 @@
 }
 
 .slider2-btns{
+    width: 4%;
     padding: 1%;
     aspect-ratio: 1/1;
     border: none;
@@ -501,24 +523,103 @@
     align-items: center;
     width: 100%;
 }
+
+
+/* Redes sociales */
+
+.Cont-5{
+    background-image: 
+    linear-gradient(to bottom , rgb(255, 255, 255), transparent),
+    url('../imgs/hojasverdesbg.png'),
+    linear-gradient(to top, rgb(255,255,255), transparent 10%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Cont-redes{
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(255,255,255) 0%, transparent 50%);
+}
+
+.Cont-redes-grid{    
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+    justify-content: center;
+    gap: 1em 2em;
+    
+}
+
+.Tiktok{
+    width: 100%;
+    grid-column: span 2 ;
+    border-radius: 15px;
+}
+
+.Face{
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    overflow: hidden;
+    /* max-height: 1222.22px; */
+    /* grid-row: span 2;   */
+    border-radius: 15px;
+}
+
+.Insta{
+    width: 100%;
+    aspect-ratio: 1/1;
+    min-width: 500px;
+    /* grid-column: span 2 ; */
+    height: 100%;
+    /* max-height: 1222.22px ; */
+    border-radius: 15px;
+}
+
+
+/* Redes sociales hasta aqui */
+
+/* Metricas */
+
+.Cont-metrics-papa{
+    width: 80%;
+}
+
+.Cont-metrics{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+    gap: 25px;
+}
+
+.cards-metrics{
+    min-height: 350px;
+}
+
+/* hasta aqui Metricas */
+
+
 /* Footer */
 
 .Footer {
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
 }
 
 .Nav-footer {
     list-style: none;
     display: flex;
-    min-width: 60%;
-    gap: 5em;
+    width: 100%;    
+    gap: 5%;
+    border-top: solid var(--primary-color) 2px;
+    border-bottom: solid var(--primary-color) 2px;
     align-items: center;
     justify-content: center;
 }
 
 .Footer-bg {
-    background-image: url('../imgs/footerbg.jpg');
-    background-position: center;
+    background-image: url('../imgs/projetsbg.jpg');
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -529,7 +630,13 @@
 
 .Cont-3 {
     display: flex;
+    justify-content: space-around;
     gap: 5rem;
+    height: 100%;
+    padding: 2%;
+    border-bottom: solid var(--primary-color) 2px;
+    border-left: solid var(--primary-color) 2px;
+    border-right: solid var(--primary-color) 2px;
 }
 
 .Cards-foot {
@@ -538,12 +645,14 @@
     justify-content: center;
     flex-direction: column;
     gap: .9rem;
+    padding: 1%;
 }
 
 .Footer-rrss {
     display: flex;
     justify-content: space-between;
     width: 40%;
+    padding: 1% 0;
 }
 
 
