@@ -52,3 +52,108 @@
         display: none;
     }
 }
+
+@media (max-width:1200px){
+    .Lateral-slider-content{
+        top: 4%;
+        left: 45%;
+        aspect-ratio: 3/4;
+        width: 60%;
+        height: auto;     
+    }
+}
+
+@media (max-width:1000px){
+    .Nav-logo-cont{
+        justify-content: center;
+        max-width: 150px;
+    }
+   
+    .Lateral-slider-content{
+        top: 50%;
+        left: 10%;
+        aspect-ratio: 4/3;
+        width: 80%;
+        height: auto;     
+    }
+}
+
+@media (max-width:930px){
+    
+    .Nav-left-cont p{
+        display: none;
+    }
+
+    /* del slider de Services */
+    .Lateral-slider-content{
+        top: 50%;
+        left: 10%;
+        aspect-ratio: 4/3;
+        width: 80%;
+        height: auto;     
+    }
+}
+
+@media (max-width:745px){
+    .Lateral-slider-content{
+        top: 50%;
+        left: 10%;
+        width: 80%;
+        aspect-ratio: 4/3;
+        height: auto;     
+    }
+
+    .slider-card:nth-child(3),
+    .slider-card:nth-child(1)   
+    {   
+        min-width: 100px;
+        width: 10%;
+    }
+}
+
+
+@media (max-width:615px){
+    .slider-card:nth-child(3),
+    .slider-card:nth-child(1)   
+    {   
+        min-width: 60px;
+        width: 10%;
+    }
+
+    /* Footer */
+
+.Footer {
+    padding-top: 25px;
+}
+
+.Nav-footer {
+    flex-direction: column;
+    border: none;
+}
+
+.Footer-logo {
+    width:25%;
+}
+
+.Cont-3 {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+    gap: 5%;
+}
+
+.Cards-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+.Footer-rrss {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+}
