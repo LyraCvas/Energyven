@@ -320,11 +320,12 @@
     font-size: var(--fs-base);
     transition: color .3s;
 }
+
 .rrss li a:hover,
-.rrss-y li a:hover{
+.rrss-y li a:hover {
     color: var(--green-2);
     font-size: var(--fs-base);
-    transition: color .3s ;
+    transition: color .3s;
 }
 
 .balls {
@@ -370,12 +371,13 @@
     left: 0;
 }
 
-.titles{
+.titles {
     width: -moz-fit-content;
     width: fit-content;
     min-width: 250px;
     text-align: center;
 }
+
 
 /* Services */
 
@@ -449,9 +451,8 @@
 .swiper-slide-next .Lateral-slider-content,
 .swiper-slide-prev .Lateral-slider-content,
 .slider-card:nth-child(1) .Lateral-slider-content,
-.slider-card:nth-child(3) .Lateral-slider-content
-{
-    display:none;
+.slider-card:nth-child(3) .Lateral-slider-content {
+    display: none;
     opacity: 0;
     transition: .7s;
     transform: translate(0, -100%);
@@ -493,7 +494,7 @@
 }
 
 .swiper-slide-next.slider-card,
-.slider-card:nth-child(3){
+.slider-card:nth-child(3) {
     min-width: 150px;
     width: 15%;
     height: 350px;
@@ -508,7 +509,7 @@
     width: 100%;
 }
 
-.slider2-btns{
+.slider2-btns {
     width: 4%;
     padding: 1%;
     aspect-ratio: 1/1;
@@ -528,37 +529,33 @@
 
 /* Redes sociales */
 
-.Cont-5{
-    background-image: 
-    linear-gradient(to bottom , rgb(255, 255, 255), transparent),
-    url('../imgs/hojasverdesbg.png'),
-    linear-gradient(to top, rgb(255,255,255), transparent 10%);
+.Cont-5 {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent), url('../imgs/hojasverdesbg.png'), linear-gradient(to top, rgb(255, 255, 255), transparent 10%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.Cont-redes{
+.Cont-redes {
     width: 100%;
-    background-image: linear-gradient(to top, rgb(255,255,255) 0%, transparent 50%);
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, transparent 50%);
 }
 
-.Cont-redes-grid{    
+.Cont-redes-grid {
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: center;
     gap: 1em 2em;
-    
 }
 
-.Tiktok{
+.Tiktok {
     width: 100%;
-    grid-column: span 2 ;
+    grid-column: span 2;
     border-radius: 15px;
 }
 
-.Face{
+.Face {
     width: 100%;
     min-width: 500px;
     height: 100%;
@@ -568,7 +565,7 @@
     border-radius: 15px;
 }
 
-.Insta{
+.Insta {
     width: 100%;
     aspect-ratio: 1/1;
     min-width: 500px;
@@ -581,22 +578,24 @@
 
 /* Redes sociales hasta aqui */
 
+
 /* Metricas */
 
-.Cont-metrics-papa{
+.Cont-metrics-papa {
     width: 80%;
 }
 
-.Cont-metrics{
+.Cont-metrics {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
     gap: 25px;
 }
 
-.cards-metrics{
+.cards-metrics {
     min-height: 350px;
 }
+
 
 /* hasta aqui Metricas */
 
@@ -610,7 +609,7 @@
 .Nav-footer {
     list-style: none;
     display: flex;
-    width: 100%;    
+    width: 100%;
     gap: 5%;
     border-top: solid var(--primary-color) 2px;
     border-bottom: solid var(--primary-color) 2px;
@@ -620,7 +619,7 @@
 
 .Footer-bg {
     background-image: url('../imgs/projetsbg.jpg');
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -666,7 +665,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 125px;
+    gap: 10%;
 }
 
 .contador {
