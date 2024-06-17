@@ -260,6 +260,7 @@ body {
 
 .Text-cont-2 p {
     max-width: 550px;
+    text-align: justify;
 }
 
 .vert-line {
@@ -906,7 +907,7 @@ body {
     content: "";
     display: block;
     width: 42%;
-    height: 1px;
+    height: 2px;
     background: var(--dark-color);
     position: absolute;
     left: 0;
@@ -917,7 +918,7 @@ body {
     content: "";
     display: block;
     width: 42%;
-    height: 1px;
+    height: 2px;
     background: var(--dark-color);
     position: absolute;
     right: 0;
