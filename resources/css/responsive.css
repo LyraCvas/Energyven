@@ -135,6 +135,10 @@
 
 
 @media (max-width:615px){
+    .title-1{
+        margin-left: 15%;
+    }
+
     .slider-card:nth-child(3),
     .slider-card:nth-child(1)   
     {   
@@ -142,7 +146,17 @@
         width: 10%;
     }
 
+    .Lateral-slider-content{
+        height: 50vh;
+        top: 15%;
+    }
+
+    .header-obj-1{
+        bottom: 15%;
+        width: 100%;
+    }
     /* Footer */
+
 
 .Footer {
     padding-top: 25px;
@@ -183,4 +197,11 @@
     gap: 5px;
 }
 
+}
+
+@media (max-height:700px) {
+    .Lateral-slider-content{
+        height: 65vh;
+        top: 10%;
+    }
 }
