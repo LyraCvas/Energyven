@@ -13,22 +13,23 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/responsive.css">
     <link rel="stylesheet" href="./resources/css/responsive1.css">
+    <link rel="stylesheet" href="./resources/css/animaciones.css">
 
     <title>Document</title>
 </head>
 
 <body>
-    <header class="Header">
-        <nav class="Nav">
+    <header class="Header" id="home">
+        <nav class="Nav Nav-scroll">
             <picture class="Nav-logo-cont">
                 <img class="Nav-logo" src="./resources/imgs/LOGO GRUPO ENERGIVEN FLAT.png" alt="">
             </picture>
             <ul class="Nav-btns-cont">
-                <li class="Nav-btns"><a class="a " href="#">Home</a></li>
-                <li class="Nav-btns"><a class="a " href="#">About Us</a></li>
-                <li class="Nav-btns"><a class="a " href="#">Our Services</a></li>
-                <li class="Nav-btns"><a class="a " href="#">Project</a></li>
-                <li class="Nav-btns"><a class="a " href="#">Contact Us</a></li>
+                <li class="Nav-btns"><a class="a " href="#home">Home</a></li>
+                <li class="Nav-btns"><a class="a " href="#aboutus">About Us</a></li>
+                <li class="Nav-btns"><a class="a " href="#ourservices">Our Services</a></li>
+                <li class="Nav-btns"><a class="a " href="#projects">Project</a></li>
+                <li class="Nav-btns"><a class="a " href="#contactus">Contact Us</a></li>
             </ul>
             <article class="Nav-left-cont">
                 <p class="ltrs-white"><span>Call Us Now</span><br>123-456-7890</p>
@@ -40,12 +41,12 @@
                 <div class="line"></div>
             </div>
         </nav>
-        <section class="title-1">
+        <section class="title-1 ani-3">
             <h1 class="ltrs-xl ltrs-white">Renewable <span class="ltrs-green">Energy</span><br> Green <span class="ltrs-green">Energy </span></h1>
             <p class="ltrs-sm ltrs-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil soluta quaerat tempore quae, corrupti debitis quia assumenda in.</p>
             <a class="a btn-border ltrs-white" href="">Read More</a>
         </section>
-        <aside class="rrss-cont">
+        <aside class="rrss-cont ani-2">
             <ul class="rrss">
                 <li class="a "><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                 <div class="balls"></div>
@@ -56,21 +57,26 @@
                 <li class="a "><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </aside>
-        <img class="header-obj-1" src="./resources/imgs/panelsolar.png" alt="">
+        <img class="header-obj-1 ani-1 ani-4" src="./resources/imgs/panelsolar.png" alt="">
     </header>
     <section class="Cont Cont-2-bg Cont-2" id="aboutus">
-        <h4 class="ltrs-lg ltrs-green2">About Us</h4>
+        <section class="Cont-titles">
+            <div class="line-title1 ani-apper-right"></div>
+            <h4 class="ltrs-xl ltrs-green2 titles">About Us</h4>
+            <div class="line-title2 ani-apper-left"></div>
+        </section>
+        
         <article class="Text-cont-2">
-            <p class="ltrs-base ltrs-drk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ut itaque quibusdam necessitatibus non velit tempora totam dolor nobis? Itaque reiciendis quisquam repellendus sit, consectetur vero vel sapiente a totam?</p>
+            <p class="ltrs-base ltrs-drk ani-apper-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ut itaque quibusdam necessitatibus non velit tempora totam dolor nobis? Itaque reiciendis quisquam repellendus sit, consectetur vero vel sapiente a totam?</p>
             <div class="vert-line"></div>
-            <p class="ltrs-base ltrs-drk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ut itaque quibusdam necessitatibus non velit tempora totam dolor nobis? Itaque reiciendis quisquam repellendus sit, consectetur vero vel sapiente a totam?</p>
+            <p class="ltrs-base ltrs-drk ani-apper-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ut itaque quibusdam necessitatibus non velit tempora totam dolor nobis? Itaque reiciendis quisquam repellendus sit, consectetur vero vel sapiente a totam?</p>
         </article>
         <a class="a btn-border ltrs-base ltrs-drk" href="">Read More</a>
     </section>
 
     <!-- Contenedor Slider -->
 
-    <div class="Cont Cont-4">
+    <div class="Cont Cont-4" id="ourservices">
         <section class="Cont-titles">
             <div class="line-title1"></div>
             <h4 class="ltrs-xl ltrs-green2 ">Services</h4>
@@ -149,7 +155,7 @@
 
     <!-- Contenedor project -->
 
-    <div class="contpadre-projec">
+    <div class="contpadre-projec" id="projects">
 
 
         <section class="project-contbg1">
@@ -161,12 +167,12 @@
         </section>
 
         <div class="cont-grid">
-            <div class="grid-1"></div>
-            <div class="grid-2"></div>
-            <div class="grid-3"></div>
-            <div class="grid-4"></div>
-            <div class="grid-5"></div>
-            <div class="grid-6"></div>
+            <div class="cards-grid grid-1"></div>
+            <div class="cards-grid grid-2"></div>
+            <div class="cards-grid grid-3"></div>
+            <div class="cards-grid grid-4"></div>
+            <div class="cards-grid grid-5"></div>
+            <div class="cards-grid grid-6"></div>
         </div>
 
     </div>
@@ -188,8 +194,8 @@
                 <!-- Instagram -->
 
                 <!-- Facebook -->
-                <iframe class="Face" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063649997030&tabs=timeline&width=500&height=&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                    height="1000px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe class="Face" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063649997030&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                     style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 <!-- Facebook -->
                 <!-- Tiktok -->
                 <blockquote class="tiktok-embed Tiktok" cite="https://www.tiktok.com/@energiven_" data-unique-id="energiven_" data-embed-from="embed_page" data-embed-type="creator">
@@ -339,7 +345,7 @@
     <!-- fin Metricas -->
     <!-- Contenedor contacto -->
 
-    <div class="containerPadre-contactos">
+    <div class="containerPadre-contactos" id="contactus">
         <section class="titulo-contactos">
             <h4 class="ltrs-lg ltrs-drk">Contact Us</h4>
         </section>

@@ -76,6 +76,11 @@
         width: 80%;
         height: auto;     
     }
+    .cont-grid {
+        grid-template-columns: repeat(2, minmax(min(100%, 200px), 1fr));
+        gap: 5px;
+    }
+    
 }
 
 @media (max-width:930px){
@@ -109,6 +114,23 @@
         min-width: 100px;
         width: 10%;
     }
+
+    .Cont-redes-grid {
+        grid-template-columns: repeat(1, auto);
+        align-items: center;
+        justify-content: center;
+        gap: 1em 2em;
+    }
+
+    .Tiktok {        
+        grid-column: auto;
+        border-radius: 15px;
+    }
+
+    .Face{
+        min-height: 500px;
+    }
+
 }
 
 
@@ -154,6 +176,11 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+}
+
+.cont-grid {
+    grid-template-columns: repeat(2, minmax(min(100%, 100px), 1fr));
+    gap: 5px;
 }
 
 }
