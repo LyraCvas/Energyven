@@ -1,6 +1,5 @@
 .ani-1{
     animation: aparecer-epicamente ease-in-out forwards 1s;
-    position: absolute;
 }
 
 @keyframes aparecer-epicamente{
@@ -65,25 +64,23 @@
 
 .ani-apper-left{
     animation: aparecer-izquierda both;
-    animation-timeline: scroll(root);
-    animation-range: entry 0 cover 12%;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
 }
 .ani-apper-right{
     animation: aparecer-derecha both ;
-    animation-timeline: scroll(root);
-    animation-range: entry 0% cover 12%;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
 }
 
 @keyframes aparecer-derecha {
     from{
         opacity: 0;
         transform: translate(-100%, 0%);
-        /* translate: -100% 0%; */
     }    
     to{
         opacity: 1;
         transform: translate(0%, 0%);
-        /* translate: 0% 0%; */
     }
 }
 @keyframes aparecer-izquierda {
@@ -99,8 +96,30 @@
 
 
 .ani-title{
-    animation: aparecer-titulo both ease;
+    animation: aparecer-texto-1 both;
     animation-timeline: view();
-    animation-range: entry 10% cover 15%; 
+    animation-range: entry 20% cover 50%; 
 }
 
+.ani-cards,
+.cards-metrics,
+.cards-grid,
+.Face,
+.Insta,
+.Tiktok
+{
+    animation: aparecer-vertical-arriba both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes aparecer-vertical-arriba {
+    from {
+        opacity: .5;
+        transform: translate(0, 100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
